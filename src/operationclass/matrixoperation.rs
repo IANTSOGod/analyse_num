@@ -1,17 +1,19 @@
+use crate::objectclass::matrix::Matrix;
+
 struct Matrixoperation{
     
 }
 
 impl Matrixoperation{
-    pub fn Prodscalaire(a: Vec<f64>,b: Vec<f64>){
+    pub fn Prodscalaire(a: Matrix,b: Matrix){
 
     }
 
-    pub fn Multiscalaire(scal: i32,vect: Vec<f64>){
+    pub fn Multiscalaire(scal: i32,vect: Matrix){
 
     }
 
-    pub fn MultiVect(a:Vec<f64>,b:Vec<f64>){
+    pub fn MultiVect(a: Matrix,b: Matrix){
 
     }
 }
