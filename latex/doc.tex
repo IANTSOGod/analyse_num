@@ -1,0 +1,133 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[utf8]{inputenc}   % Encodage UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}         % Pour insérer des images
+\usepackage{amsmath, amssymb} % Pour les maths
+% \usepackage{hyperref}         % Pour les liens cliquables
+\usepackage{geometry}         % Marges du document
+\usepackage{palatino}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=blue]{hyperref}
+
+
+
+\geometry{margin=2.5cm}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    % --- Logo en haut ---
+    \includegraphics[width=0.12\textwidth]{univ.png}\hspace{1cm}
+    \includegraphics[width=0.12\textwidth]{fac.jpg}\hspace{1cm}
+    \includegraphics[width=0.12\textwidth]{IT.jpg}\\[1.5cm]
+
+    % --- Infos Université ---
+    {\large Université d'Antananarivo \\ 
+    Faculté des Sciences \\ [0.1cm]
+    Mention Informatique et Technologie}\\[1.5cm]
+
+    % --- Grand titre ---
+    {\Huge \bfseries Rapport de Projet de Réseau de Neurones}\\[0.5cm]
+    {\large Prédiction de la langue d'une phrase avec un réseau de neurones}\\[2cm]
+
+    % --- Auteurs ---
+    \textbf{Groupe de 4 personnes :}\\
+    Iantso, Fandresena, Brice, Tsito\\[1cm]
+
+    % --- Date ---
+    {\large \today}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+Dans ce projet, nous nous intéressons à la reconnaissance automatique de la langue d'une phrase.
+L'objectif est de développer un modèle de réseau de neurones capable de prédire la langue (par exemple : français, anglais, espagnol, etc.) à partir d'une entrée textuelle.
+
+\section{Contexte}
+La détection automatique de la langue est une tâche importante dans le traitement automatique du langage naturel (TALN).
+Elle est utilisée dans :
+\begin{itemize}
+	\item Les traducteurs automatiques (Google Translate, DeepL, etc.)
+	\item Les systèmes de reconnaissance vocale
+	\item Les moteurs de recherche multilingues
+\end{itemize}
+
+\section{Objectifs}
+\begin{itemize}
+	\item Concevoir et entraîner un réseau de neurones simple pour classer les phrases selon leur langue.
+	\item Évaluer la performance du modèle sur un jeu de test.
+	\item Comparer avec des approches classiques de détection de langue.
+\end{itemize}
+
+\chapter*{Méthodologie}
+\addcontentsline{toc}{chapter}{Méthodologie}
+
+\section{Données utilisées}
+Pour entraîner le modèle, nous avons utilisé un dataset contenant des phrases dans plusieurs langues (français, anglais, espagnol, etc.).
+Chaque phrase est associée à une étiquette correspondant à la langue.\\ Malheureusement nous n'avons pas trouvés de dataset avec le langue malgache
+
+\section{Architecture du réseau de neurones}
+Le modèle utilisé est un réseau de neurones simple codé avec le langage de programmation python avec :
+\begin{itemize}
+	\item Couche d'entrée : représentation vectorielle des phrases.
+	\item Couches cachées : couches entièrement connectées avec fonction d'activation ReLU.
+	\item Couche de sortie : classification multiclasse avec fonction softmax.
+\end{itemize}
+
+L'équation générale de la couche dense est :
+\[
+	y = f(Wx + b)
+\]
+
+où $W$ est la matrice de poids, $b$ le biais, et $f$ la fonction d'activation.\\
+
+L'equation de la fonction ReLU est :
+
+\[
+	ReLU(x)=max(0,x)
+\]\\
+
+Et l'equation de la fonction softmax est :\\
+
+\[
+\text{Softmax}(z_i) = \frac{e^{z_i - \max_j z_j}}{\sum_{k=1}^{n} e^{z_k - \max_j z_j}} \quad \text{pour } i = 1, 2, \dots, n
+\]\\
+
+$zi$: la valeur du i‑ème élément du vecteur d’entrée
+
+$n$ : le nombre total de classes
+
+et la somme des Softmax sur toutes les classes vaut 1 :
+\[
+\sum_{i=1}^{n} \text{Softmax}(z_i) = 1
+\]\\
+
+\section{Prétraitement des données}
+Avant d'entrer dans le réseau, les phrases ont été vectorisé puis normalisé
+
+\section{Hyperparamètres du modèle}
+\begin{itemize}
+    \item Nombre de couches cachées : 1
+    \item Neurones par couche : 512
+    \item Fonction d'activation : ReLU
+    \item Fonction de perte : Cross-Entropy
+    \item Batch size : 32
+    \item Nombre d'époques : 500
+\end{itemize}
+
+
+
+
+
+% \chapter*{Résultats et discussion}
+% Après entraînement sur plusieurs époques, le modèle atteint une précision de 92\% sur l'ensemble de test.
+% Les erreurs se produisent principalement entre les langues proches (exemple : espagnol vs portugais).
+
+% \section{Matrice de confusion}
+
+
+\end{document}
