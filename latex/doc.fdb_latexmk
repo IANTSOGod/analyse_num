@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1760012030.1981 "/home/mit/latex/doc.tex" "doc.pdf" "doc" 1760012033.08251 0
+["pdflatex"] 1760174600.81798 "/home/mit/git/analyse_num/latex/doc.tex" "doc.pdf" "doc" 1760174602.39303 0
   "/etc/texmf/web2c/texmf.cnf" 1758346002.99216 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mit/latex/doc.tex" 1760012029.61052 4423 841225c4053f301c54100cfe9bd160a2 ""
+  "/home/mit/git/analyse_num/latex/doc.tex" 1760174600.26944 4433 379ce08baff885585c6352146f42a061 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -105,10 +105,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758346053.08086 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758346188 8213714 71012f36456a32374bc92692798d9a0f ""
   "IT.jpg" 1757323227.01506 9761 72bf8651c496b2a343f407e140577c7f ""
-  "doc.aux" 1760012032.81952 1243 ae9e45470eed1841db85109afeb13ebf "pdflatex"
-  "doc.out" 1760012032.82452 1179 db3875264b955ac93fd974930ae61f1c "pdflatex"
-  "doc.tex" 1760012029.61052 4423 841225c4053f301c54100cfe9bd160a2 ""
-  "doc.toc" 1760012032.82552 623 c453e68c33984c6ce1f037431d3da498 "pdflatex"
+  "doc.aux" 1760174602.29044 1243 ae9e45470eed1841db85109afeb13ebf "pdflatex"
+  "doc.out" 1760174602.29244 1179 db3875264b955ac93fd974930ae61f1c "pdflatex"
+  "doc.tex" 1760174600.26944 4433 379ce08baff885585c6352146f42a061 ""
+  "doc.toc" 1760174602.29344 623 c453e68c33984c6ce1f037431d3da498 "pdflatex"
   "fac.jpg" 1757323227.28806 9312 6836151c695e400f8e59c862f1cb322d ""
   "univ.png" 1758348764.65096 25504 a9061608b971f0e98c18c92649fb7d7e ""
   (generated)
