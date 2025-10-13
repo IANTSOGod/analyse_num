@@ -1,0 +1,24 @@
+# Pour installer toutes les dépendances listées 
+# pip install -r requirements.txt
+
+
+
+# Utilisation d'un environnement Python 3.9 ou supérieur.
+
+# Exigence : numpy supérieur ou egal à 1.26
+numpy>=1.26
+
+# Pour la manipulation et l'analyse de données (module pandas)
+pandas
+
+# Pour le TruncatedSVD (module sklearn.decomposition.TruncatedSVD)
+scikit-learn
+
+# Pour la sérialisation des objets Python (module joblib)
+joblib
+
+# Pour afficher les barres de progression des boucles (module tqdm)
+tqdm
+
+# Pour le traçage et la visualisation de données (module matplotlib)
+matplotlib

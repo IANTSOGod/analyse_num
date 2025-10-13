@@ -79,7 +79,7 @@ def loadData(file="/content/drive/MyDrive/"):
     with open(json_path, 'r') as f:
         vocabX = json.load(f)
 
-    json_path = file + "vocabYfit.json"
+    json_path = file + "vocabYFit.json"
     with open(json_path, 'r') as f:
         vocabY = json.load(f)
     return X, y, idf, vocabX, vocabY
@@ -353,25 +353,13 @@ def create_mini_batches(X, y, batch_size=64, shuffle=True):
     return mini_batches
 
 
-# In[67]:
+# In[74]:
 
 
-X , y, idf, vocabX, vocabY = loadData(file="")
+"""X , y, idf, vocabX, vocabY = loadData(file="")"""
 
 
-# In[73]:
-
-
-text = "il faudra de la fois et du courage, une relation remplie de rage qui demarre sur des bases pourries"
-json_path = "vocabYfit.json"
-with open(json_path, 'r') as f:
-    vocabY = json.load(f)
-params = np.load("parametres4.npy", allow_pickle=True).item()
-lan = predict(text, params, vocabY, norm=True)
-print(lan)
-
-
-# In[22]:
+# In[75]:
 
 
 """X_div, X_test, Y, y_test = divideData(X, y)
