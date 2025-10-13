@@ -1,26 +1,23 @@
-# Pour installer toutes les dépendances listées 
-# pip install -r requirements.txt
+1 - Pour installer toutes les dépendances listées 
 
+2 - Utilisation d'un environnement Python 3.9 ou supérieur.
 
+3 - Exigence : numpy supérieur ou egal à 1.26
+--> pip install numpy>=1.26
 
-# Utilisation d'un environnement Python 3.9 ou supérieur.
+4 - Pour la manipulation et l'analyse de données (module pandas)
+--> pip install pandas
 
-# Exigence : numpy supérieur ou egal à 1.26
-numpy>=1.26
+5 - Pour le TruncatedSVD (module sklearn.decomposition.TruncatedSVD)
+--> pip install scikit-learn
 
-# Pour la manipulation et l'analyse de données (module pandas)
-pandas
+6 - Pour la sérialisation des objets Python (module joblib)
+--> pip install joblib
 
-# Pour le TruncatedSVD (module sklearn.decomposition.TruncatedSVD)
-scikit-learn
+7 - Pour afficher les barres de progression des boucles (module tqdm)
+--> pip install tqdm
 
-# Pour la sérialisation des objets Python (module joblib)
-joblib
+8 - Pour le traçage et la visualisation de données (module matplotlib)
+--> pip install matplotlib
 
-# Pour afficher les barres de progression des boucles (module tqdm)
-tqdm
-
-# Pour le traçage et la visualisation de données (module matplotlib)
-matplotlib
-
-# Pour tester notre reseau vous devez executer le fichier main.py
+9 - Pour tester notre reseau vous devez executer le fichier main.py
